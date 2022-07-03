@@ -1,0 +1,177 @@
+main{
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-row-gap: 1rem;
+
+    grid-template-areas: 
+    'fotoPerfil        principal         principal         ad'
+    'fotoPerfil        contatos          contatos          projetosPrevia'
+    'skills            sobrePrevia       sobrePrevia       projetosPrevia'
+    'skills            educacao          educacao          projetosPrevia'
+    'skills            cursosExtras      cursosExtras      projetosPrevia'
+    'projetoCompleto   projetoCompleto   linkProjeto       projetosPrevia'
+    'experiencia       experiencia       experiencia       projetosPrevia'
+    ;
+}
+
+.fotoPerfil img{
+    grid-area: fotoPerfil;
+
+    width: 20rem;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.principal{
+    grid-area: principal;
+
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 1rem 0 56.26% ;
+    text-align: center;
+    justify-content: center;
+    color: #7C5437;
+    font-size: 12px;
+}
+
+.principal h1{
+    font-size: 50px;
+    color: #000000;
+}
+
+.principal iframe,
+.principal object,
+.principal embed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contatos{
+    grid-area: contatos;
+
+    cursor: pointer;
+    margin-top: -17rem;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones{
+    background-color: #7C5437;
+    width: 30px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.icones img{
+    background-color: #7C5437;
+    padding: 5px;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.sobrePrevia{
+    grid-area: sobrePrevia;
+
+    margin-top: -8rem;
+    text-align: justify;
+    padding: 30px;
+}
+
+.educacao{
+    grid-area: educacao;
+
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    grid-gap: 1rem;
+}
+
+.educacao img{
+    width: 48px;
+    border-radius: 50%;
+}
+
+.educacao .data{
+    color: #777;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.educacao .instituicao{
+    font-size: 0.8rem;
+}
+
+.projetoCompleto{
+    text-align: center;
+}
+
+.linkProjeto .button{
+    border: none;
+    background-color: #fb2300;
+    color: white;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.linkProjeto{
+    grid-area: linkProjeto;
+
+    padding: 3rem 1rem;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+}
+
+.ad{
+    grid-area: ad;
+
+    margin: 1rem;
+    padding: 4rem;
+    text-align: center;
+    background-color: #2196f3;
+    color: white;
+    height: 70px;
+}
+
+.projetosPrevia{
+    grid-area: projetosPrevia;
+
+    margin: 1rem;
+}
+
+.projetosPrevia a{
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-gap: 0.5rem;
+    padding-bottom: 0.75rem;
+}
+
+.projetosPrevia img{
+    width: 100%;
+}
+
+.projetosPrevia h4{
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.projetosPrevia p{
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.projetosPrevia img{
+    width: 150px;
+}

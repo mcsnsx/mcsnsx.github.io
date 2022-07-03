@@ -1,0 +1,23 @@
+@media screen and (max-width: 700px) {
+    .menu, .ad{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 700px) {
+    header{
+        grid-template-columns: auto auto auto;
+    }
+
+    main{
+        max-width: 1200px;
+
+        grid-template-areas: 
+        'principal   principal      ad'
+        'principal   principal      projetos'
+        'principal   actions        projetos'
+        'educacao    linkProjeto    projetos'
+        '.              .           projetos';
+    }
+}

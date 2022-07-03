@@ -12,8 +12,7 @@ body{
 
 header{    
     padding: 1rem;
-    background-color: white;
-    border-bottom: 2px solid #f2f2f2;
+    background-color: #cecece;
 
     display: grid;
     grid-template-columns: auto auto;
@@ -27,7 +26,39 @@ a{
 }
 
 .logo img{
-    width: 50px;
+    width: 4rem;
+}
+
+.menu{
+    width:100%;
+    display: flex;
+}
+
+.menu ul{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    color: #7C5437;
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 300;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.menu li{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.menu li:hover{
+    display: block;
+    cursor: pointer;
+    color:#724423;
+    font-weight: 600;
 }
 
 .contato input{
@@ -39,11 +70,18 @@ a{
 
 .button{
     padding: 0.25rem 1.5rem;
-    border: 1px solid #2c5fd5;
+    border: 1px solid #7C5437;
     border-radius: 2px;
-    color: #2c5fd5;
+    color: #7C5437;
     font-weight: bold;
     text-decoration: none;
+}
+.button:hover{
+    background-color: #7C5437;
+    display: block;
+    cursor: pointer;
+    color:#ffffff;
+    font-weight: 600;
 }
 
 .linkProjeto .button{
@@ -64,8 +102,7 @@ main{
 
     grid-template-areas: 
     'fotoPerfil        principal         principal         ad'
-    'fotoPerfil        principal         principal         projetosPrevia'
-    'fotoPerfil        principal         principal         projetosPrevia'
+    'fotoPerfil        contatos          contatos          projetosPrevia'
     'skills            sobrePrevia       sobrePrevia       projetosPrevia'
     'skills            educacao          educacao          projetosPrevia'
     'skills            cursosExtras      cursosExtras      projetosPrevia'
@@ -80,14 +117,52 @@ main{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding: 1rem 0 56.26% 1rem;
-    height: 0;
-    overflow: hidden;
+    padding: 1rem 0 56.26% ;
     text-align: center;
+    justify-content: center;
+    color: #7C5437;
+    font-size: 12px;
 }
 
-.principal img{
-    width: 20px;
+.principal h1{
+    font-size: 50px;
+    color: #000000;
+}
+
+.contatos{
+    grid-area: contatos;
+
+    cursor: pointer;
+    margin-top: -17rem;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato:hover{
+    background-color: #7C5437;
+    display: block;
+    cursor: pointer;
+    color:#ffffff;
+    font-weight: 600;
+}
+
+.sobrePrevia{
+    grid-area: sobrePrevia;
+}
+
+.icones{
+    background-color: #7C5437;
+    width: 30px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.icones img{
+    background-color: #7C5437;
+    padding: 5px;
+    border-radius: 50%;
+    width: 50px;
 }
 
 .fotoPerfil img{
@@ -95,6 +170,7 @@ main{
 
     width: 20rem;
     border-radius: 50%;
+    margin: 10px;
 }
 
 .principal iframe,
@@ -150,6 +226,7 @@ main{
     text-align: center;
     background-color: #2196f3;
     color: white;
+    height: 70px;
 }
 
 .projetosPrevia{
@@ -207,4 +284,18 @@ main{
         'educacao    linkProjeto    projetos'
         '.              .           projetos';
     }
+}
+
+.teste p{
+    
+    display: none;
+    color: #000000;
+}
+
+.teste:hover{
+    background-color: #724423;
+    display: block;
+    cursor: pointer;
+    color:#724423;
+    font-weight: 600;
 }
